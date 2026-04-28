@@ -1,22 +1,27 @@
 # 1.Experimental verification of Signal sampling using various types
-
 # Aim
 Write a simple Python program for the construction and reconstruction of ideal, natural, and flattop sampling.
-
 # Tools required
+    Google Colab
+    Python
+    NumPy Library
+    Matplotlib Library
+    Internet Connection
+    Computer / Laptop / Mobile
 
-Google Colab
-Python
-NumPy Library
-Matplotlib Library
-Internet Connection
-Computer / Laptop
+# Theory
+🔹 Introduction
 
+Sampling is the process of converting a continuous-time signal into a discrete-time signal by taking its values at uniform time intervals. It is a fundamental step in digital signal processing and communication systems.
+
+According to the Nyquist Theorem, a signal can be perfectly reconstructed from its samples if the sampling frequency fs is at least twice the maximum frequency fm present in the signal:
+fs ≥ 2fm..
+	​This minimum sampling rate is called the Nyquist rate. If this condition is not satisfied, aliasing occurs, leading to distortion.
 # Program
 ```
 import numpy as np
 import matplotlib.pyplot as plt
-# Continuous signal parameters
+
 fm = 5                      # Message frequency 5hz
 fs = 50                     # Sampling frequency 50hz
 t = np.linspace(0, 1, 1000) # Continuous time axis
@@ -68,10 +73,8 @@ plt.show()
 ```
 # Output Waveform
 
-<img width="1492" height="989" alt="image" src="https://github.com/user-attachments/assets/45e52dd8-36aa-4a8a-87f1-d44d182e69bb" />
+<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/7b25e43a-0a76-4f81-b49c-916e4cf0d3b9" />
+
 
 # Results
-
-Thus Experimental verification of Signal sampling using various types is verified.
-
-
+Therefor a simple Python program for the construction and reconstruction of ideal, natural, and flattop sampling is excecuted.
